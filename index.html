@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<title>Мы Вам Построим Дом</title>
+
+	<!-- Подключаем reset и bootstrap -->
+	<link rel="stylesheet" href="css/reset.css">	
+
+
+
+	<!-- Подключаем возможность отображения тегов HTML5 для браузеров меньше IE9 -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+
+	<!-- jQuery должен идти перед Bootstrap, причем версия jQuery должна быть от 1.9.4 до 3.0.0 -->
+	<script src="js/jquery-2.2.4.js"></script>
+	<!-- Подключаем скрипты от Bootstrap -->
+	<script src="js/bootstrap.js"></script>
+
+
+	<!--ПОдключаем BXSlider-->
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+	<!-- Подключаем свои настройки -->
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			// Фиксированная шапка при скроле
+			$("#header").removeClass("fixed");
+			$(window).scroll(function () {
+				if ( $(this).scrollTop() > 0 ) {
+					$("#header").addClass("fixed").fadeIn('fast');
+					$("#slider").addClass("margin").fadeIn('fast');
+
+				} else {
+					$("#header").removeClass("fixed").fadeIn('fast');
+					$("#slider").removeClass("margin").fadeIn('fast');
+				}
+			});
+
+			// Вызов окна для связи
+			$('#connect').addClass('hidden');
+			$('a[href="#connect"]').click(function () {
+				$('#connect').removeClass('hidden').addClass('visible').fadeIn('fast');
+			});
+			$('#closedConnect').click(function () {
+				$('#connect').removeClass('visible').addClass('hidden').fadeIn('fast');
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div id="header">
+	<div class="container clearfix">
+			<div class="logo">
+				<a href=""><img src="img/logo.png" alt=""></a>
+			</div>
+			<div class="delimiter"></div>
+			<div class="header-panel">
+				
+				<div class="header-panel-contact clearfix">
+					<div class="social"><span class="vk"><a href=""></a></span><span class="fb"><a href=""></a></span><span class="yt"><a href=""></a></span><span class="ok"><a href=""></a></span><span class="ml"><a href=""></a></span></div>
+					<div class="number"><span>+375 29</span><span>797 43 62</span><span>8 0164</span><span>25 40 54</span></div>
+				</div>
+				<div class="navigation">
+					<ul class="clearfix">
+						<li><a href="" class="active">Главная</a></li>
+						<li><a href="">О нас</a></li>
+						<li><a href="">Новости</a></li>
+						<li><a href="">Наши работы</a></li>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="#connect">Свяжитесь с нами</a></li>
+					</ul>
+				</div>
+			</div>
+	</div>	
+</div>
+
+
+<div id="slider">
+	<ul class="bxslider">
+		<li><img src="img/slider/1.png" /></li>
+		<li><img src="img/slider/2.jpg" /></li>
+		<li><img src="img/slider/3.jpg" /></li>
+		<li><img src="img/slider/4.jpg" /></li>
+	</ul>
+	<div class="grad"></div>
+	<div class="container">
+		<div class="sale">
+			<p>Крупнейшее в беларуси<br />производство лего-кирпича</p>
+			<p><span>6000</span>бел.руб/шт.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="sub-menu">
+	<div class="container clearfix">
+		<div class="sm-item">
+			<a href="">
+				<img src="img/item-1.png" alt="">
+				<h3>Кирпич Lego</h3>
+			</a>
+		</div>
+		<div class="sm-item">
+			<a href="">
+				<img src="img/item-2.png" alt="">
+				<h3>Метал штакетник</h3>
+			</a>
+			<ul>
+				<li><a href="">Ширина 78 мм.</a></li>
+				<li><a href="">Ширина 90 мм.</a></li>
+				<li><a href="">Ширина 102 мм.</a></li>
+				<li><a href="">Ширина 115 мм.</a></li>
+			</ul>
+		</div>
+		<div class="sm-item">
+			<a href="">
+				<img src="img/item-3.png" alt="">
+				<h3>Кирпич LegoBrik</h3>
+			</a>
+			<ul>
+				<li><a href="">Рядовой</a></li>
+				<li><a href="">Угловой</a></li>
+				<li><a href="">Примыкающий</a></li>
+				<li><a href="">Крышка столба</a></li>
+				<li><a href="">Ригель</a></li>
+			</ul>
+		</div>
+		<div class="sm-item">
+			<a href="">
+				<img src="img/item-4.png" alt="">
+				<h3>Тротуарная плитка</h3>
+			</a>
+			<ul>
+				<li><a href="">Кирпичик</a></li>
+				<li><a href="">Кисточка</a></li>
+			</ul>
+		</div>
+		<div class="sm-item">
+			<a href="">
+				<img src="img/item-5.png" alt="">
+				<h3>El Brus</h3>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div id="about">
+		<div class="about-text">
+			<h1>о нас</h1>
+			<p><i>&laquo;Наша компания представляет интересы на Европейских выставках, продукция всегда на высшем уровне и не имеет аналогов, а ценовая политика позволяет угодить каждому. Мы всегда готовы к сотрудничеству и идем на встречу нашим клиентам и партнерам.&raquo;</i></p>
+			<p>Директор ЧСУП &quot;<span>Мы Вам постоим дом</span>&quot;</p>
+		</div>
+	</div>
+</div>
+
+
+<div id="news">
+	<div class="container">
+		<h1>Наши новости</h1>
+		<div class="news-menu clearfix">
+			<div class="news-item">
+				<img src="img/news.png" alt="">
+				<h4>Битумная и гибкая черепица TEGOLA</h4>
+				<p>Черепица Tegola появилась на российском рынке и завоевала здесь популярность около 15 лет назад...</p>
+				<a href="">Подробнее</a>
+			</div>
+			<div class="news-item">
+				<img src="img/news.png" alt="">
+				<h4>Битумная и гибкая черепица TEGOLA</h4>
+				<p>Черепица Tegola появилась на российском рынке и завоевала здесь популярность около 15 лет назад...</p>
+				<a href="">Подробнее</a>
+			</div>
+			<div class="news-item">
+				<img src="img/news.png" alt="">
+				<h4>Битумная и гибкая черепица TEGOLA</h4>
+				<p>Черепица Tegola появилась на российском рынке и завоевала здесь популярность около 15 лет назад...</p>
+				<a href="">Подробнее</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="line"></div>
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="footer-item">
+			<p class="title">Адрес</p>
+			<p>г.Кобрин, ул.Первомайская, 106 И-1</p>
+		</div>
+		<div class="footer-item">
+			<p class="title">Телефоны</p>
+			<p>+375 29 <span>797 43 62</span></p>
+			<p>8 0164 <span>25 40 54</span></p>
+		</div>
+		<div class="footer-item">
+			<p class="title">E-mail</p>
+			<p>mvpdom@yandex.ru</p>
+			<div class="social"><a href="#"><span class="vk"></span></a><a href=""><span class="fb"></span></a><a href=""><span class="yt"></span></a><a href=""><span class="ok"></span></a><a href=""><span class="ml"></span></a></div>
+		</div>
+	</div>
+</div>
+
+
+<div id="connect">
+	<div class="background"></div>
+	<form action="#">
+		<div id="closedConnect">&#215;</div>
+		<h3>Свяжитесь с нами</h3>
+		<input type="text" placeholder="Ваше имя">
+		<input type="text" placeholder="Телефон">
+		<input type="submit" value="Отправить">
+	</form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+$font-folder: '../fonts/';
+$font-open-sans: $font-folder + 'OpenSans/';
+
+@font-face {
+	$name: 'OpenSans-Bold';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-BoldItalic';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-ExtraBold';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-ExtraBoldItalic';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-Italic';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-Light';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-LightItalic';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-Regular';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-Semibold';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+@font-face {
+	$name: 'OpenSans-SemiboldItalic';
+	font-family: $name;
+	src: url($font-open-sans + $name + '.eot');
+	src: url($font-open-sans + $name + '.eot?#iefix') format('embedded-opentype'),
+		 url($font-open-sans + $name + '.ttf') format('truetype'); }
+
+
+
+%left { float: left; }
+%right { float: right; }
